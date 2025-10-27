@@ -1,0 +1,80 @@
+/* General */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+/* Carrusel ajustes */
+.carousel-producto {
+  max-width: 700px; /* ancho máximo del carrusel */
+  margin: 0 auto;   /* centrar */
+}
+
+/* Ajuste de las imágenes del carrusel */
+.carousel-producto img {
+  height: 420px;      /* altura */
+  object-fit: cover;  /* matiene o recorta proporciones */
+}
+
+/* Precio */
+.precio {
+  font-size: 1.8rem;
+  color: #007bff;
+  transition: all 0.25s ease;
+}
+
+.precio.resaltado {
+  color: #e63946;
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+/* la descripsion con el efecto slide (max-height animado) */
+.descripcion-wrapper {
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  max-height: 400px; /* es para mostrar la descripción cuando está visible */
+}
+
+.descripcion-wrapper.collapsed {
+  max-height: 0; /* oculta con transición */
+}
+
+.descripcion {
+  font-size: 1.05rem;
+  color: #333;
+  padding: 10px;
+}
+
+/* carritodeC*/
+.carrito {
+  display: none; /* Oculto por defecto */
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.08);
+}
+
+.producto-carrito {
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 15px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.producto-carrito p {
+  margin: 6px 0;
+  font-size: 1.05rem;
+}
+
+/* ajuste botones */
+button {
+  min-width: 140px;
+}
